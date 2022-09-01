@@ -1,0 +1,1 @@
+1 - Criar o HTML do funcionamento de cores normais presas a um array(7 cores do arco-iris)
