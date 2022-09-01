@@ -1,11 +1,16 @@
-const colors = ["red", "rgb(255,127,0)", "yellow", "green", 
-    "blue", "rgb(75,0,130)", "rgb(143,0,255)"];
+const colors = ["Red", "Orange", "Yellow", "Green", 
+    "Blue", "RGB(75,0,130)", "RGB(143,0,255)"];
 
 const btn = document.getElementById('btn');
 const color = document.querySelector('.color');
 
+function getRandomNumbers(){
+    return Math.floor(Math.random() * colors.length);
+}
+
 btn.addEventListener("click", function simpleClick(){
-    const randomNumberSimple = 1;
+    const randomNumberSimple = getRandomNumbers(3);
+    console.log(randomNumberSimple)
     document.body.style.backgroundColor = colors[randomNumberSimple];
     color.textContent = colors[randomNumberSimple];
 })
